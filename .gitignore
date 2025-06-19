@@ -1,5 +1,8 @@
 # Python virtual environment
 .venv/
+venv/
+env/
+ENV/
 
 # Build directories
 build/
@@ -7,14 +10,34 @@ dist/
 
 # Python cache files
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
 
 # IDE configurations
 .idea/
 .vscode/
+*.sublime-project
+*.sublime-workspace
 
 # Specification files
 *.spec
 
 # Database files
 sensor_data.db
+*.db
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Package distribution
+*.egg
+*.egg-info/
